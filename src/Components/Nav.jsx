@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { navLinks } from "../constants";
+import { headerLogo } from "../assets/images";
 
 function Nav() {
   const [showNavMenu, setShowMenu] = useState(false);
@@ -7,12 +8,7 @@ function Nav() {
     <header className="pt-8 absolute z-20 w-full px-8 lg:px-24">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
-          <img
-            src="src/assets/images/header-logo.svg"
-            alt="Logo"
-            width={130}
-            height={29}
-          />
+          <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
         <ul className="flex flex-1 justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((link, index) => (
