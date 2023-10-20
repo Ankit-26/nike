@@ -18,7 +18,7 @@ function Hero() {
         <p className="text-xl font-montserrat text-coral-red">
           Our summer collection
         </p>
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
+        <h1 className=" mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
           <span className="xl:whitespace-nowrap relative pr-10 z-10">
             The New Arrival
           </span>
@@ -26,6 +26,7 @@ function Hero() {
           <span className="text-coral-red inline-block mt-3">
             ShoeShop
           </span>{" "}
+          <br />
           Shoes
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-8 sm:max-w-sm ">
