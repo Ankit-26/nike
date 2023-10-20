@@ -5,8 +5,8 @@ import ScrollRouter from "./Components/ScrollRouter";
 import LandingPage from "./pages/LandingPage";
 import Shop from "./pages/Shop";
 import WishList from "./pages/WishList";
-import ProductDetails from "./pages/productDetails";
 import Cart from "./pages/Cart";
+import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
   return (
