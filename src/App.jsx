@@ -1,12 +1,12 @@
 import Nav from "./Components/Nav";
-import WishList from "./pages/WishList";
+import Footer from "./sections/Footer";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import ScrollRouter from "./Components/ScrollRouter";
 import LandingPage from "./pages/LandingPage";
 import Shop from "./pages/Shop";
-import Footer from "./sections/Footer";
-import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
-import Cart from "./pages/Cart";
-import ScrollRouter from "./Components/ScrollRouter";
+import WishList from "./pages/WishList";
 import ProductDetails from "./pages/productDetails";
+import Cart from "./pages/Cart";
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/wishlist" element={<WishList />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/shop/:id" element={<ProductDetails />} />
+            <Route path="/shop/:id?" element={<ProductDetails />} />
           </Routes>
         </ScrollRouter>
 
