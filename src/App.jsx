@@ -2,11 +2,11 @@ import Nav from "./Components/Nav";
 import WishList from "./pages/WishList";
 import LandingPage from "./pages/LandingPage";
 import Shop from "./pages/Shop";
-import ProductDetails from "./pages/productDetails";
 import Footer from "./sections/Footer";
 import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
 import Cart from "./pages/Cart";
 import ScrollRouter from "./Components/ScrollRouter";
+import ProductDetails from "./pages/productDetails";
 
 export default function App() {
   return (
