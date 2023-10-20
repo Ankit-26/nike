@@ -5,7 +5,7 @@ import ScrollRouter from "./Components/ScrollRouter";
 import LandingPage from "./pages/LandingPage";
 import Shop from "./pages/Shop";
 import WishList from "./pages/WishList";
-// import ProductDetails from "./pages/productDetails";
+import ProductDetails from "./pages/productDetails";
 import Cart from "./pages/Cart";
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/wishlist" element={<WishList />} />
             <Route path="/cart" element={<Cart />} />
-            {/* <Route path="/shop/:id?" element={<ProductDetails />} /> */}
+            <Route path="/shop/:id?" element={<ProductDetails />} />
           </Routes>
         </ScrollRouter>
 

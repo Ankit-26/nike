@@ -7,17 +7,13 @@ import { wishListAction } from "../redux/wishlistSlice";
 
 function ProductCard({ shoe, wishlist }) {
   const navigate = useNavigate();
-  let location = useLocation();
   const appDispatch = useDispatch();
 
   return (
     <div
       className=" flex flex-col max-md:justify-center cursor-pointer"
       onClick={() => {
-        navigate(
-          { pathname: `${location.pathname}/${shoe.id}` },
-          { state: shoe }
-        );
+        navigate({ pathname: `/shop/${shoe.id}` }, { state: shoe });
       }}
     >
       <div className="overflow-hidden h-[70%] relative">

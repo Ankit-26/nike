@@ -10,7 +10,7 @@ import shieldTick from "./shield-tick.svg";
 import star from "./star.svg";
 import truckFast from "./truck-fast.svg";
 import twitter from "./twitter.svg";
-import wishList from "./wishList.png";
+import wishList from "./wishlist.png";
 import cart from "./cart.png";
 import collpase from "./collpase.png";
 import filter from "./filter.png";
