@@ -1,27 +1,30 @@
 import Nav from "./Components/Nav";
-import CustomerReviews from "./sections/CustomerReviews";
+import WishList from "./pages/WishList";
+import LandingPage from "./pages/LandingPage";
+import Shop from "./pages/Shop";
+import ProductDetails from "./pages/productDetails";
 import Footer from "./sections/Footer";
-import Hero from "./sections/Hero";
-import PopularProducts from "./sections/PopularProducts";
-import Services from "./sections/Services";
-import SpecialOffer from "./sections/SpecialOffer";
-import SuperQuality from "./sections/SuperQuality";
-import Suscribe from "./sections/Suscribe";
+import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
+import Cart from "./pages/Cart";
+import ScrollRouter from "./Components/ScrollRouter";
 
 export default function App() {
   return (
     <main className="relative">
-      <Nav />
-      <div className="px-8 lg:px-24">
-        <Hero />
-        <PopularProducts />
-        <SuperQuality />
-        <Services />
-        <SpecialOffer />
-        <CustomerReviews />
-        <Suscribe />
-      </div>
-      <Footer />
+      <BrowserRouter scrollToTop={true}>
+        <Nav />
+        <ScrollRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/wishlist" element={<WishList />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/shop/:id" element={<ProductDetails />} />
+          </Routes>
+        </ScrollRouter>
+
+        <Footer />
+      </BrowserRouter>
     </main>
   );
 }

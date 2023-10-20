@@ -21,7 +21,7 @@ function ShoeCard({ imgURL, changeSelectedShoeImage, bigShoeImg }) {
           alt="shoe"
           width={130}
           height={150}
-          className="object-contain "
+          className="object-contain"
         />
       </div>
     </div>

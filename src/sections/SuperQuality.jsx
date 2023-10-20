@@ -5,7 +5,7 @@ import { shoe8 } from "../assets/images";
 
 function SuperQuality() {
   return (
-    <session
+    <section
       id={"about-us"}
       className=" mt-28 flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
@@ -20,16 +20,16 @@ function SuperQuality() {
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
           We champion continual progress for athletes and sport by taking action
-          to help athletes reach their potential. Every job at NIKE, Inc. is
+          to help athletes reach their potential. Every job at ShoeShop, Inc. is
           grounded in a team-first mindset, cultivating a culture of innovation
           and a shared purpose to leave an enduring impact.
         </p>
         <p className="mt-6 lg:max-w-lg info-text">
           Our dedication and to detail and excellence ensures yours satisfaction
         </p>
-        <div className="mt-4">
+        {/* <div className="mt-4">
           <Button label={"View Details"} iconURl={arrowRight} />
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-1  justify-center items-center">
         <img
@@ -40,7 +40,7 @@ function SuperQuality() {
           className="object-contain "
         />
       </div>
-    </session>
+    </section>
   );
 }
 

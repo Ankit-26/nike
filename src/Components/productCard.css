@@ -1,0 +1,14 @@
+.ln-product-card:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s ease-out;
+
+}
+
+.ln-product-card{
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+}
+
+.ln-product-img img{
+    cursor:zoom-in;
+}

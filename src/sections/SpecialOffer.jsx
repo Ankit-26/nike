@@ -2,8 +2,11 @@ import React from "react";
 import { offer } from "../assets/images";
 import { arrowRight } from "../assets/icons";
 import Button from "../Components/Button";
+import { useNavigate } from "react-router-dom";
 
 function SpecialOffer() {
+  const navigate = useNavigate();
+
   return (
     <section className=" mt-28 flex justify-center item-center max-xl:flex-col-reverse gap-10 max-container ">
       <div className="xl:flex-1">
@@ -30,11 +33,7 @@ function SpecialOffer() {
           nothing short of exceptional.
         </p>
         <div className="mt-4 flex flex-wrap gap-4">
-          <Button label={"Shop now"} />
-          <Button
-            label={"Learn more"}
-            style="bg-white border-slate-gray text-slate-gray"
-          />
+          <Button label={"Shop now"} onClick={() => navigate("/shop")} />
         </div>
       </div>
     </section>
