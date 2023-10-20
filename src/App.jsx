@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/wishlist" element={<WishList />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/shop/:id?" element={<ProductDetails />} />
+            {/* <Route path="/shop/:id?" element={<ProductDetails />} /> */}
           </Routes>
         </ScrollRouter>
 
